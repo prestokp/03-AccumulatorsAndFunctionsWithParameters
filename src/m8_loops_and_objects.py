@@ -198,7 +198,7 @@ def print_cosines():
     import math
     for k in range(101):
         print(80*math.cos(k))
-        
+
 
 
 
