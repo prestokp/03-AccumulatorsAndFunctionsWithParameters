@@ -246,6 +246,7 @@ def draw_cosines_and_sines():
     # DONE: 9. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
+
     # -------------------------------------------------------------------------
     print()
     print('--------------------------------------------------')
