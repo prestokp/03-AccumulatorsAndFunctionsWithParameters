@@ -25,6 +25,7 @@ def main():
     draw_circles1()
     draw_circles2()
     draw_circles3()
+    draw_cosines_and_sines()
 
 
 def print_sequence1():
@@ -250,7 +251,13 @@ def draw_cosines_and_sines():
     print('--------------------------------------------------')
     print('Running draw_cosines_and_sines:  See graphics window')
     print('--------------------------------------------------')
-    rg.RoseWindow(400,400)
+    window = rg.RoseWindow(400,400)
+    for k in range(101):
+        center = rg.Point(200 + 80 * math.cos(k), 200 + 80 * math.sin(k))
+        circle = rg.Circle(center, 10)
+        circle.attach_to(window)
+    window.render()
+    window.close_on_mouse_click()
 
 
 # -----------------------------------------------------------------------------
